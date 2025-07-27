@@ -90,7 +90,6 @@ Create a file named .env in the root of the project directory (intelligent-agent
 
 File: .env
 
-Generated code
 ```python
 # OpenAI API Configuration
 OPENAI_API_KEY="sk-..."
