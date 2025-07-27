@@ -83,3 +83,60 @@ Although the code is provided below, for a real setup you would clone a reposito
 mkdir -p intelligent-agent-chatbot/app/documents
 cd intelligent-agent-chatbot
 ```
+
+### Step2: Configure Environment Variables
+
+Create a file named .env in the root of the project directory (intelligent-agent-chatbot/) and add your API keys.
+
+File: .env
+
+Generated code
+```python
+# OpenAI API Configuration
+OPENAI_API_KEY="sk-..."
+
+# LangSmith Observability Configuration
+LANGCHAIN_TRACING_V2="true"
+LANGCHAIN_API_KEY="ls__..."
+LANGCHAIN_PROJECT="Intelligent Agent - RAG Demo"
+
+
+LANGCHAIN_TRACING_V2="true": Enables LangSmith tracing.
+```
+
+LANGCHAIN_PROJECT: Groups all your runs under this project name in the LangSmith dashboard.
+
+### Step 4: Build and Run with Docker
+
+From the root of the project directory (intelligent-agent-chatbot/), run the following command:
+
+``` bash
+docker-compose up --build
+```
+
+This command will: Build the Docker image based on the Dockerfile.
+
+Start the service defined in docker-compose.yml.
+
+The first time it runs, the Python script will load project_docs.txt, create embeddings, and save them to the chroma_db directory.
+
+### Step 5: Access the Application
+
+Chatbot UI: Open your web browser and go to http://localhost:8501
+
+Observability Dashboard: Go to LangSmith and log in. You will see your project "Intelligent Agent - RAG Demo" with detailed traces for every query.
+
+### Screenshots
+UI in Action
+
+A screenshot would show the Streamlit interface. On the left, a chat history. On the right, the current conversation. A user asks "What is the pricing model?", and the agent responds with information from the documents, followed by an expandable "Citations" section showing the exact text snippets used.
+
+<img width="1852" height="1000" alt="Screenshot from 2025-07-27 13-28-06" src="https://github.com/user-attachments/assets/5c39a45c-e0ff-4498-a9ed-312096a55572" />
+
+<img width="1852" height="1000" alt="Screenshot from 2025-07-27 13-28-29" src="https://github.com/user-attachments/assets/43bdbb28-8b32-402b-b3fa-fa6b740b259c" />
+
+
+### LangSmith Observability Dashboard
+
+A screenshot would show the LangSmith dashboard. A table lists recent runs, with columns for Name, Latency, Feedback, and Tokens. Clicking on a run would open a detailed trace view, showing the flow from ChatInput to Retriever to LLM and the final Output, with inputs and outputs for each step clearly visible.
+
