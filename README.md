@@ -139,6 +139,7 @@ A screenshot would show the Streamlit interface. On the left, a chat history. On
 
 Few of screenshots attached below would show the LangSmith dashboard. A table lists recent runs, with columns for Name, Latency, Feedback, and Tokens. Clicking on a run would open a detailed trace view, showing the flow from ChatInput to Retriever to LLM and the final Output, with inputs and outputs for each step clearly visible.
 
+<img width="1845" height="957" alt="image" src="https://github.com/user-attachments/assets/a40f96bd-ee1a-4204-b468-2a9e713cb616" />
 <img width="1845" height="957" alt="Screenshot from 2025-07-27 13-42-01" src="https://github.com/user-attachments/assets/780dda46-ad5d-4ed9-9b55-95aed46dd981" />
 <img width="1845" height="957" alt="image" src="https://github.com/user-attachments/assets/42a63274-e756-4d04-a953-8346dbad2244" />
 <img width="1845" height="957" alt="image" src="https://github.com/user-attachments/assets/cabbf533-ac74-4c06-976f-46ad8c675221" />
