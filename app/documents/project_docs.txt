@@ -1,0 +1,21 @@
+# QuantumLeap AI - Product Documentation
+
+## Overview
+QuantumLeap AI is a next-generation platform for building and deploying autonomous agents. Our flagship product, "Nexus," provides a low-code environment for designing complex agent workflows. It is designed for enterprise-grade scalability and security. The platform supports integration with over 100 third-party services.
+
+## Core Features
+- **Agent Weaver:** A visual drag-and-drop interface for creating agent logic.
+- **Cognitive Core:** Powered by a proprietary mixture-of-experts model for advanced reasoning.
+- **Secure Vault:** A dedicated module for managing and injecting API keys and secrets securely.
+- **Observability Hub:** Built-in logging, tracing, and metrics for monitoring agent performance.
+
+## Pricing Model
+We offer three tiers for our Nexus platform:
+1.  **Developer Tier:** Free. Includes 1,000,000 agent credits per month, 2 projects, and community support. Ideal for individual developers and hobbyists.
+2.  **Pro Tier:** $499/month. Includes 50,000,000 agent credits, 20 projects, email support, and access to premium integration tools.
+3.  **Enterprise Tier:** Custom pricing. Includes unlimited credits, unlimited projects, a dedicated support engineer, and on-premise deployment options. Contact sales for a quote.
+
+## Support & SLA
+- Developer Tier support is provided through our community forums and Discord server.
+- Pro Tier customers receive a response within 24 hours via email on business days.
+- Enterprise Tier customers have a dedicated Slack channel and a 99.9% uptime Service Level Agreement (SLA). All support requests are handled with priority.
