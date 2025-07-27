@@ -105,7 +105,7 @@ LANGCHAIN_TRACING_V2="true": Enables LangSmith tracing.
 
 LANGCHAIN_PROJECT: Groups all your runs under this project name in the LangSmith dashboard.
 
-### Step 4: Build and Run with Docker
+### Step 3: Build and Run with Docker
 
 From the root of the project directory (intelligent-agent-chatbot/), run the following command:
 
@@ -119,7 +119,7 @@ Start the service defined in docker-compose.yml.
 
 The first time it runs, the Python script will load project_docs.txt, create embeddings, and save them to the chroma_db directory.
 
-### Step 5: Access the Application
+### Step 4: Access the Application
 
 Chatbot UI: Open your web browser and go to http://localhost:8501
 
